@@ -1,0 +1,62 @@
+package io.intelligence.ppmtool.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import io.intelligence.ppmtool.domain.Project;
+import io.intelligence.ppmtool.exceptions.ProjectIdException;
+import io.intelligence.ppmtool.repositories.ProjectRepository;
+
+@Service
+public class ProjectService {
+
+	@Autowired
+	private ProjectRepository projectRepository;
+
+	public Project saveOrUpdate(Project project) {
+
+		try {
+
+			project.setProjectIdentifier(project.getProjectIdentifier().toUpperCase());
+			if(findProjectByIdentifier(project.getProjectIdentifier()) != null) {
+				project.setProjectName(project.getProjectName());
+				project.setDescription(project.getDescription());
+				project.setStart_date(project.getStart_date());
+				project.setEnd_date(project.getEnd_date());
+				project.setUpdated_At(project.getUpdated_At());
+				projectRepository.save(project);
+			}
+			
+			
+			return projectRepository.save(project);
+		} catch (Exception e) {
+			throw new ProjectIdException(
+					"Project Id" + project.getProjectIdentifier().toUpperCase() + " already exists.");
+		}
+	}
+
+	public Project findProjectByIdentifier(String projectId) {
+
+		Project project = projectRepository.findByProjectIdentifier(projectId.toUpperCase());
+		if (project == null) {
+			throw new ProjectIdException("Project Id " + projectId + " does not exists.");
+		}
+
+		return project;
+	}
+
+	public Iterable<Project> findAll() {
+		return projectRepository.findAll();
+	}
+
+	public void deleteProjectByIdentifier(String projectId) {
+		Project project = projectRepository.findByProjectIdentifier(projectId.toUpperCase());
+
+		if (project == null) {
+			throw new ProjectIdException("Cannot delete project with id " + projectId + ". This does not exist.");
+		}
+
+		projectRepository.delete(project);
+	}
+
+}

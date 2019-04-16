@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;ppmtool&apos;" deleteContents="true" description="Delete resource &apos;ppmtool&apos;" element1="/ppmtool" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1555440513228"/>
+</session>
