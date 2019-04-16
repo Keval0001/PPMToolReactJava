@@ -5,7 +5,28 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-04-16T16:45:13Z</updated>
+  <updated>2019-04-16T19:15:00Z</updated>
+  <entry>
+    <title>Spring Cloud Task 2.2.0.M1 is now available</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/04/16/spring-cloud-task-2-2-0-m1-is-now-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Glenn Renfro</name>
+    </author>
+    <id>tag:spring.io,2019-04-16:3648</id>
+    <updated>2019-04-16T19:15:00Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce that Spring Cloud Task 2.2.0.M1 is now available on Github and the Pivotal download repository. Many thanks to all of those who contributed to this release.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-s-new" class="anchor" name="what-s-new"&gt;&lt;/a&gt;What’s New?&lt;/h2&gt;
+&lt;p&gt;Spring Cloud Task 2.2.0.M1 is intended to be the version of the framework aligned with Spring Boot 2.2.0. Updates from 2.0.x include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Update all dependencies.&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Task compiles and runs on Java 8, 9, 10, 11, 12.&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Task Reference documentation has been modernized.&lt;/li&gt;
+  &lt;li&gt;Bug Fixes&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#what-else-is-going-on" class="anchor" name="what-else-is-going-on"&gt;&lt;/a&gt;What Else Is Going On?&lt;/h2&gt;
+&lt;p&gt;Beyond the basics to keep Spring Cloud Task up to date with the rest of the ecosystem, we are also working with the Spring Cloud Data Flow team to enhance the overall experience of running tasks with Data Flow. This includes things like documentation that is coming as well as the multi platform support that was released in Spring Cloud Data Flow 2.0.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-do-you-think" class="anchor" name="what-do-you-think"&gt;&lt;/a&gt;What Do You Think?&lt;/h2&gt;
+&lt;p&gt;We look forward to your feedback on these new features in &lt;a href="https://github.com/spring-cloud/spring-cloud-task/issues"&gt;Github&lt;/a&gt;, &lt;a href="http://stackoverflow.com/tags/spring-cloud-task"&gt;StackOverflow&lt;/a&gt;, &lt;a href="https://gitter.im/spring-cloud/spring-cloud-task"&gt;Gitter&lt;/a&gt;, or directly via Twitter to &lt;a href="https://twitter.com/michaelminella"&gt;@michaelminella&lt;/a&gt; or &lt;a href="https://twitter.com/cppwfs"&gt;@cppwfs&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cloud.spring.io/spring-cloud-task/"&gt;Spring Cloud Task Home&lt;/a&gt; | &lt;a href="https://github.com/spring-cloud/spring-cloud-task"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-cloud-task/docs/2.2.0.M1/reference/"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Flight of the Flux 2 - Debugging Caveats</title>
     <link rel="alternate" href="https://spring.io/blog/2019/04/16/flight-of-the-flux-2-debugging-caveats" />
@@ -1526,32 +1547,5 @@ class UserWithDetailsController(
 &lt;/ul&gt;
 &lt;p&gt;The versions of a number of third-party dependencies have also been updated.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/platform"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/platform/docs/Cairo-SR8/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring IO Platform Brussels-SR17</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/04/04/spring-io-platform-brussels-sr17" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Andy Wilkinson</name>
-    </author>
-    <id>tag:spring.io,2019-04-04:3630</id>
-    <updated>2019-04-04T15:08:00Z</updated>
-    <content type="html">&lt;p&gt;I am pleased to announce that &lt;a href="https://spring.io/projects/platform"&gt;Spring IO Platform&lt;/a&gt; Brussels-SR17 is now available from both &lt;a href="https://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and Maven Central. &lt;/p&gt;
-&lt;p&gt;This maintenance release upgrades the versions of a number of the projects in the Platform:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring AMQP 1.7.13&lt;/li&gt;
-  &lt;li&gt;Spring Boot 1.5.20&lt;/li&gt;
-  &lt;li&gt;Spring Cloud Connectors 1.2.8&lt;/li&gt;
-  &lt;li&gt;Spring Data Ingalls SR20&lt;/li&gt;
-  &lt;li&gt;Spring Framework 4.3.23&lt;/li&gt;
-  &lt;li&gt;Spring Integration 4.3.20&lt;/li&gt;
-  &lt;li&gt;Spring Retry 1.2.4&lt;/li&gt;
-  &lt;li&gt;Spring Security 4.2.12&lt;/li&gt;
-  &lt;li&gt;Spring Security JWT 1.0.10&lt;/li&gt;
-  &lt;li&gt;Spring Security OAuth 2.0.17&lt;/li&gt;
-  &lt;li&gt;Spring Web Services 2.4.5&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The versions of a number of third-party dependencies have also been updated.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/platform"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/platform/docs/Brussels-SR17/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
