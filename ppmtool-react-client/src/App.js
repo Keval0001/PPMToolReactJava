@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+=======
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+>>>>>>> branch11
 
 class App extends Component {
   render() {
@@ -9,7 +15,11 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
+<<<<<<< HEAD
             Edit <code>src/App.js</code> ss d to reload.
+=======
+            Edit <code>src/App.js</code> and save to reload.
+>>>>>>> branch11
           </p>
           <a
             className="App-link"
