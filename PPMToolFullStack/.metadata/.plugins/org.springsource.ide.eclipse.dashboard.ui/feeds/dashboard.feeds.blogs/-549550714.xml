@@ -5,7 +5,50 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-04-16T19:15:00Z</updated>
+  <updated>2019-04-17T12:50:03Z</updated>
+  <entry>
+    <title>CVE-2019-3799: Spring Cloud Config 2.1.2, 2.0.4, 1.4.6 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/04/17/cve-2019-3799-spring-cloud-config-2-1-2-2-0-4-1-4-6-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Spencer Gibb</name>
+    </author>
+    <id>tag:spring.io,2019-04-16:3649</id>
+    <updated>2019-04-17T12:50:03Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;We have released Spring Cloud Config 2.1.2, 2.0.4, and 1.4.6 to address &lt;a href="https://pivotal.io/security/cve-2019-3799"&gt;CVE-2019-3799: Directory Traversal with spring-cloud-config-server&lt;/a&gt;. Please review the information in the CVE report and upgrade immediately.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;These fixes will be included in the next release of the respective Spring Cloud release train.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; To override the version in Maven, update the dependency to include the version, such as:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;dependency&amp;gt;
+	&amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
+	&amp;lt;artifactId&amp;gt;spring-cloud-config-server&amp;lt;/artifactId&amp;gt;
+	&amp;lt;version&amp;gt;2.1.2.RELEASE&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Similarly, in Gradle:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-groovy" data-lang="groovy"&gt;dependencies {
+	compile('org.springframework.cloud:spring-cloud-config-server:2.1.2.RELEASE')
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-cloud-config/"&gt;Project Page&lt;/a&gt; |
+&lt;a href="https://github.com/spring-cloud/spring-cloud-config/"&gt;GitHub&lt;/a&gt; |
+&lt;a href="http://stackoverflow.com/questions/tagged/spring-cloud"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud Task 2.2.0.M1 is now available</title>
     <link rel="alternate" href="https://spring.io/blog/2019/04/16/spring-cloud-task-2-2-0-m1-is-now-available" />
@@ -419,7 +462,7 @@ public static class DemoControllerService {&#xD;
 	}&#xD;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;&lt;a href="#configuring-circuit-breakers" class="anchor" name="configuring-circuit-breakers"&gt;&lt;/a&gt;Configuring Circuit Breakers&lt;/h1&gt;
-&lt;p&gt;In most cases, you are going to want to configure the behavior of your circuit breakers. To do so, you can create beans of type &lt;code&gt;Customize&lt;/code&gt;. Spring Cloud Circuit Breaker lets you provide a default configuration for all circuit breakers as well as configuration for specific circuit breakers. For example, to provide a default configuration for all circuit breakers when using Resilience4J you could add the following bean to a configuration class:&lt;/p&gt;
+&lt;p&gt;In most cases, you are going to want to configure the behavior of your circuit breakers. To do so, you can create beans of type &lt;code&gt;Customizer&lt;/code&gt;. Spring Cloud Circuit Breaker lets you provide a default configuration for all circuit breakers as well as configuration for specific circuit breakers. For example, to provide a default configuration for all circuit breakers when using Resilience4J you could add the following bean to a configuration class:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
 public Customizer&amp;lt;Resilience4JCircuitBreakerFactory&amp;gt; defaultCustomizer() {&#xD;
 	return factory -&amp;gt; factory.configureDefault(&#xD;
@@ -1518,34 +1561,5 @@ class UserWithDetailsController(
   &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=jRgZe7kWDnU"&gt;The &amp;ldquo;Spring Tips&amp;rdquo; screencast introducing the Spring and Microsoft Azure integration&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/600772455%3Fsecret_token%3Ds-dwdd4&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring IO Platform Cairo-SR8</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/04/04/spring-io-platform-cairo-sr8" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Andy Wilkinson</name>
-    </author>
-    <id>tag:spring.io,2019-04-04:3631</id>
-    <updated>2019-04-04T15:56:54Z</updated>
-    <content type="html">&lt;p&gt;I am pleased to announce that &lt;a href="https://spring.io/projects/platform"&gt;Spring IO Platform&lt;/a&gt; Cairo-SR8 is now available from both &lt;a href="https://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and Maven Central. With the IO Platform reaching &lt;a href="https://spring.io/blog/2018/04/09/spring-io-platform-end-of-life-announcement"&gt;end of life on 9 April 2019&lt;/a&gt;, this is expected to be the final IO Platform release.&lt;/p&gt;
-&lt;p&gt;This maintenance release upgrades the versions of a number of the projects in the Platform:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring AMQP 2.0.12&lt;/li&gt;
-  &lt;li&gt;Spring Batch 4.0.3&lt;/li&gt;
-  &lt;li&gt;Spring Cloud Connectors 2.0.5&lt;/li&gt;
-  &lt;li&gt;Spring Data Kay-SR14&lt;/li&gt;
-  &lt;li&gt;Spring Framework 5.0.13&lt;/li&gt;
-  &lt;li&gt;Spring HATEOAS 0.25.1&lt;/li&gt;
-  &lt;li&gt;Spring Integration 5.0.13&lt;/li&gt;
-  &lt;li&gt;Spring Retry 1.2.4&lt;/li&gt;
-  &lt;li&gt;Spring Security JWT 1.0.10&lt;/li&gt;
-  &lt;li&gt;Spring Security OAuth 2.2.4&lt;/li&gt;
-  &lt;li&gt;Spring Security 5.0.12&lt;/li&gt;
-  &lt;li&gt;Spring Session Apple-SR9&lt;/li&gt;
-  &lt;li&gt;Spring Web Services 3.0.7&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The versions of a number of third-party dependencies have also been updated.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/platform"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/platform/docs/Cairo-SR8/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
