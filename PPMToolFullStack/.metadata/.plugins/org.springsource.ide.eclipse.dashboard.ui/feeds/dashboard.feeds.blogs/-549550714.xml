@@ -5,7 +5,35 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-04-29T16:40:00Z</updated>
+  <updated>2019-04-30T18:38:14Z</updated>
+  <entry>
+    <title>This Week in Spring - April 30th, 2019</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/04/30/this-week-in-spring-april-30th-2019" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-04-30:3661</id>
+    <updated>2019-04-30T18:38:14Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans and welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I&amp;rsquo;m in colorful Chicago, Illinois, and magnificent Milwaukee, Wisconsin. I am &lt;em&gt;so&lt;/em&gt; excited to be in both places. I&amp;rsquo;m in Chicago for the GOTO Chicago event, which is always fun, and I&amp;rsquo;m in Milwaukee for a meetup and, of course, to partake of local delicacies like Kopps, a Cousins sub, and a Spotted Cow beer. Life is &lt;em&gt;great&lt;/em&gt;! &lt;/p&gt;
+&lt;p&gt;Did you see this epic image of the Chicago Lakeshore area I took the other day? Spring is truly in full swing! (I&amp;rsquo;ll ignore the buckets of rain that have been dumped on Chicago and Milwaukee just a day after that photo was taken&amp;hellip;) &lt;/p&gt;
+&lt;img src = "https://content.cdntwrk.com/files/aHViPTYzOTc1JmNtZD1pdGVtZWRpdG9yaW1hZ2UmZmlsZW5hbWU9aXRlbWVkaXRvcmltYWdlXzVjYzc0M2RmYTczM2YuanBnJnZlcnNpb249MDAwMCZzaWc9MGE2M2IxNzkwZTFhOTlmN2NmZTc1MzYzOTAyOGQ4Njc%253D" width ="600" /&gt;
+&lt;p&gt;Anyway we&amp;rsquo;ve got tons of stuff to get into so, let&amp;rsquo;s! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Check out the latest edition &lt;a href="https://content.pivotal.io/blog/this-month-in-spring-april-2019"&gt;of &lt;em&gt;This Month in Spring&lt;/em&gt;&lt;/a&gt;. It captures all the stuff we&amp;rsquo;ve covered in &lt;em&gt;This Week in Spring&lt;/em&gt; and highlights all the good stuff I&amp;rsquo;ve been trying to work on as well. Surely there&amp;rsquo;s something you&amp;rsquo;ve missed?&lt;/li&gt;
+  &lt;li&gt;Five years into their journey with Pivotal Cloud Foundry, Liberty Mutual is not standing still. I liked this episode of &lt;em&gt;Pivotal Conversations&lt;/em&gt; with &lt;a href="https://content.pivotal.io/podcasts/not-standing-still-in-secure-devops-with-jai-schniepp-of-liberty-mutual"&gt;Liberty Mutual&amp;rsquo;s Jai Schniepp&lt;/a&gt;. Also, a great podcast and worth a listen!&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/04/29/spring-cloud-open-service-broker-3-0-0-released"&gt;Spring Cloud Open Service Broker 3.0.0 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/04/29/spring-cloud-open-service-broker-2-1-2-released"&gt;Spring Cloud Open Service Broker 2.1.2 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/04/26/a-bootiful-podcast-spring-batch-and-spring-cloud-task-lead-michael-minella"&gt;A Bootiful Podcast: Spring Batch and Spring Cloud Task lead Michael Minella&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/04/24/spring-boot-for-apache-geode-pivotal-gemfire-1-0-0-rc1-released"&gt;Spring Boot for Apache Geode &amp;amp; Pivotal GemFire 1.0.0.RC1 Released!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/04/24/spring-tips-spring-cloud-circuit-breaker"&gt;Spring Tips: Spring Cloud Circuit Breaker&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This Java Techie video looks kinda interesting - it introduces &lt;a href="https://www.youtube.com/watch?v=Dd9-UxrNiD0"&gt;using Spring Cloud Consul for service discovery&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This Portguese-language video on monitoring Spring Boot applications &lt;a href="https://www.youtube.com/watch?v=jd6i9e-NNRM"&gt;with Actuator looks interesting&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;InfoQ have a nice piece on upgrading Java applications from Java 8 to 11. &lt;a href="https://www.infoq.com/articles/upgrading-java-8-to-12?itm_source=infoq&amp;itm_medium=popular_widget&amp;itm_campaign=popular_content_list&amp;itm_content="&gt;Worth a viewing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;So, you want to use MQTT &lt;em&gt;and&lt;/em&gt; Apache Kafka? This might be &lt;a href="https://www.infoq.com/news/2019/04/hivemq-extension-kafka-mqtt?itm_source=infoq&amp;itm_medium=popular_widget&amp;itm_campaign=popular_content_list&amp;itm_content="&gt;what you&amp;rsquo;re looking for.. &lt;/a&gt;. (You might also consider using Spring Integraton&amp;rsquo;s Kafka and MQTT adapters..)&lt;/li&gt;
+  &lt;li&gt;Have you taken the 2019 &lt;a href="https://www.cloudfoundry.org/blog/take-the-2019-cloud-foundry-user-survey/"&gt;CloudFoundry User Survey?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud Open Service Broker 3.0.0 Released</title>
     <link rel="alternate" href="https://spring.io/blog/2019/04/29/spring-cloud-open-service-broker-3-0-0-released" />
@@ -1020,75 +1048,5 @@ public String hello(@CurrentSecurityContext
 &lt;p&gt;speaker: &lt;a href="http://twitter.com/Starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s the &lt;a href="https://www.youtube.com/watch?v=GDIDSzZLjjg"&gt;first Spring Tips installment introducing the &amp;ldquo;raw&amp;rdquo; RSocket protocol and Java client library&lt;/a&gt;&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/BxHqeq58xrE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Session for Apache Geode &amp; Pivotal GemFire 2.2.0.M1 Available</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/04/12/spring-session-for-apache-geode-pivotal-gemfire-2-2-0-m1-available" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>John Blum</name>
-    </author>
-    <id>tag:spring.io,2019-04-12:3641</id>
-    <updated>2019-04-12T20:07:40Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;I am pleased to announce the release of Spring Session for Apache Geode &amp;amp; Pivotal GemFire (SSDG), 2.2.0.M1.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;This release focuses on dependency updates to align with the rest of the Spring portfolio in their respective release lines, building on:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Framework 5.2.0.M1&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Data Moore-M3&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Session 2.2.0.M1&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;And is targeted for use in Spring Boot 2.2.0.M1&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;SSDG 2.2.0.M1 bits are available in the Spring libs-milestone repository (&lt;a href="http://repo.spring.io/libs-milestone/org/springframework/session/spring-session-data-geode/2.2.0.M1"&gt;here&lt;/a&gt;).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="what-s-next"&gt;&lt;a class="anchor" href="#what-s-next"&gt;&lt;/a&gt;What&amp;#8217;s Next&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Some of the proposed and upcoming features in the SSDG 2.2 release line include:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Attached Sessions (option).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Stronger Consistency (option) using &lt;code&gt;Map.replace(key, oldValue, newValue)&lt;/code&gt; for lightweight transactions supplanting the need for heavier, cache/local transactions.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Improvements in PDX Serialization support.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;And much more&amp;#8230;&amp;#8203;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="feedback"&gt;&lt;a class="anchor" href="#feedback"&gt;&lt;/a&gt;Feedback&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;As always, any feedback is much appreciated.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-session-data-geode/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-session-data-geode/pulls"&gt;PR&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-session"&gt;StackOverflow&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
   </entry>
 </feed>
