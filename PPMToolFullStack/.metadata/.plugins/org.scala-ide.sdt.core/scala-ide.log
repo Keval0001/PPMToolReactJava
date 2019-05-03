@@ -2310,3 +2310,33 @@ Caused by: com.cedarsoftware.util.io.JsonIoException: EOF reached prematurely
 	at com.cedarsoftware.util.io.JsonParser.readValue(JsonParser.java:278)
 	at com.cedarsoftware.util.io.JsonReader.readObject(JsonReader.java:521)
 	... 167 more
+2019-05-03 14:56:04,442 ERROR [Java indexing] - System.err - java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+2019-05-03 14:56:04,449 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.compiler.util.HashtableOfObject.<init>(HashtableOfObject.java:38)
+2019-05-03 14:56:04,450 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:663)
+2019-05-03 14:56:04,450 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:466)
+2019-05-03 14:56:04,450 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:458)
+2019-05-03 14:56:04,450 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:560)
+2019-05-03 14:56:04,450 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.index.Index.save(Index.java:197)
+2019-05-03 14:56:04,450 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndex(IndexManager.java:954)
+2019-05-03 14:56:04,450 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:996)
+2019-05-03 14:56:04,450 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:685)
+2019-05-03 14:56:04,450 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:379)
+2019-05-03 14:56:04,450 ERROR [Java indexing] - System.err - at java.lang.Thread.run(Unknown Source)
+2019-05-03 14:56:04,450 ERROR [Java indexing] - System.err - -------------------- DEBUG --------------------
+2019-05-03 14:56:04,451 ERROR [Java indexing] - System.err - file = file:/C:/KevalProjects/PPMToolFullStack/.metadata/.plugins/org.eclipse.jdt.core/3774133819.index
+2019-05-03 14:56:04,451 ERROR [Java indexing] - System.err - offset = 5606
+2019-05-03 14:56:04,451 ERROR [Java indexing] - System.err - size = 1769240879
+2019-05-03 14:56:04,451 ERROR [Java indexing] - System.err - --------------------   END   --------------------
+2019-05-03 14:56:04,699 ERROR [Java indexing] - System.err - Exception in thread "Java indexing"
+2019-05-03 14:56:04,700 ERROR [Java indexing] - System.err - java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+2019-05-03 14:56:04,700 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.compiler.util.HashtableOfObject.<init>(HashtableOfObject.java:38)
+2019-05-03 14:56:04,700 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:663)
+2019-05-03 14:56:04,700 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:466)
+2019-05-03 14:56:04,700 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:458)
+2019-05-03 14:56:04,700 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:560)
+2019-05-03 14:56:04,700 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.index.Index.save(Index.java:197)
+2019-05-03 14:56:04,706 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndex(IndexManager.java:954)
+2019-05-03 14:56:04,706 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:996)
+2019-05-03 14:56:04,706 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:685)
+2019-05-03 14:56:04,709 ERROR [Java indexing] - System.err - at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:379)
+2019-05-03 14:56:04,709 ERROR [Java indexing] - System.err - at java.lang.Thread.run(Unknown Source)
