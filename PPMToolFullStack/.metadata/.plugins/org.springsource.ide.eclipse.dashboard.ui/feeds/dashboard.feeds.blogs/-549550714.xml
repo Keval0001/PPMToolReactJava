@@ -276,12 +276,12 @@ Mono&amp;lt;Void&amp;gt; atomic = template.update(Step.class)&#xD;
   <entry>
     <title>Spring Boot 2.1.5 released</title>
     <link rel="alternate" href="https://spring.io/blog/2019/05/15/spring-boot-2-1-5-released" />
-    <category term="engineering" label="Engineering" />
+    <category term="releases" label="Releases" />
     <author>
       <name>Phil Webb</name>
     </author>
     <id>tag:spring.io,2019-05-15:3681</id>
-    <updated>2019-05-15T12:00:32Z</updated>
+    <updated>2019-05-15T12:00:00Z</updated>
     <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Boot 2.1.5 has been released and is now available from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and Maven Central.&lt;/p&gt;
 &lt;p&gt;This is a maintenance release that includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.1.5.RELEASE"&gt;a number of important dependency updates and bug fixes&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;A gentle reminder that Spring Boot 1.5 will be &lt;a href="https://spring.io/blog/2018/07/30/spring-boot-1-x-eol-aug-1st-2019"&gt;end of life in august&lt;/a&gt;, so all users should now be upgrading to Spring Boot 2.1.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
