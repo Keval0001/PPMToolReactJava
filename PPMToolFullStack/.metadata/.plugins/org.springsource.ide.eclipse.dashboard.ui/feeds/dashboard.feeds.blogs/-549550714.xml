@@ -5,7 +5,339 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-05-30T04:15:00Z</updated>
+  <updated>2019-05-31T19:46:00Z</updated>
+  <entry>
+    <title>Java CFEnv 1.1.0.M1 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/05/31/java-cfenv-1-1-0-m1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Mark Pollack</name>
+    </author>
+    <id>tag:spring.io,2019-05-31:3700</id>
+    <updated>2019-05-31T19:46:00Z</updated>
+    <content type="html">&lt;div class="sect1"&gt;
+&lt;h2 id="introduction"&gt;&lt;a class="anchor" href="#introduction"&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the community I am happy to announce the release of Java CFEnv 1.1 M1.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This release brings in contributions from several teams&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;EMC Volume Service&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pivotal Single Sign-On Service&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pivotal Redis Service&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Support for Volume Services is a new feature.  Single Sign-On functionality has been improved to set Spring Security auto-configuration properties for Spring Security 5&amp;#8217;s OAuth support.  The Redis support has been improved to support auto-configuration of TLS.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The project &lt;a href="https://github.com/pivotal-cf/java-cfenv/blob/master/README.adoc"&gt;README&lt;/a&gt; has more information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;A release candidate is going out next week, followed quickly by a GA release.  Please try it out and give feedback on our &lt;a href="https://github.com/pivotal-cf/java-cfenv/issues"&gt;github issues&lt;/a&gt; page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="background"&gt;&lt;a class="anchor" href="#background"&gt;&lt;/a&gt;Background&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;For those who may have missed the &lt;a href="https://spring.io/blog/2019/02/15/introducing-java-cfenv-a-new-library-for-accessing-cloud-foundry-services"&gt;first release announcement&lt;/a&gt;, the Java CFEnv library allows you to easily access environment variables set when deploying an application to Cloud Foundry. It is modeled after the design of the library &lt;a href="https://github.com/cloudfoundry-community/node-cfenv/"&gt;node-cfenv&lt;/a&gt; and other &lt;code&gt;*-cfenv&lt;/code&gt; libraries in the Cloud Foundry ecosystem.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The library also sets common application properties in Spring Boot so that Java objects such as the &lt;code&gt;DataSource&lt;/code&gt; or the &lt;code&gt;RabbitConnectionFactory&lt;/code&gt; are created using Spring Boot auto-configuration.  It is a replacement for the Spring Cloud Connectors library which is now is maintenance mode.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>A Bootiful Podcast: Verónica Lopez on Go, Kubernetes, Physics, the Cloud, and More</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/05/31/a-bootiful-podcast-ver-nica-lopez-on-go-kubernetes-physics-the-cloud-and-more" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-05-31:3699</id>
+    <updated>2019-05-31T01:20:00Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! In this episode I talk to Go-lang and Kubernetes-legend Verónica Lopez about community, physics, distributed systems and more.&lt;/p&gt;
+&lt;p&gt;Verónica on Twitter &lt;a href="http://twitter.com/maria_fibonacci"&gt;@maria_fibonacci&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/629305281&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Introducing Spring Cloud App Broker</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/05/30/introducing-spring-cloud-app-broker" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Roy Clarkson</name>
+    </author>
+    <id>tag:spring.io,2019-05-30:3698</id>
+    <updated>2019-05-30T15:58:12Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;We recently announced the general availability of &lt;a href="https://content.pivotal.io/blog/spring-cloud-services-3-0-includes-new-and-improved-config-server"&gt;Spring Cloud Services 3.0&lt;/a&gt;, which involved a major redesign of the previous architecture used in that project. As detailed in the related blog post, Spring Cloud Services has moved to the latest versions of Spring Framework and Spring Boot, and is now built on a Reactive programming model and Spring WebFlux. Two key components of this redesign are offered as open source Spring Cloud projects.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The first project is &lt;a href="https://spring.io/projects/spring-cloud-open-service-broker"&gt;Spring Cloud Open Service Broker&lt;/a&gt;. This project has been available for some time; however, the recent &lt;a href="https://spring.io/blog/2019/04/29/spring-cloud-open-service-broker-3-0-0-released"&gt;3.0.0 release&lt;/a&gt; has itself been redesigned to incorporate a Reactive programming model and updated to support Spring WebFlux.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The second project, which is being introduced today, is &lt;a href="https://spring.io/projects/spring-cloud-app-broker/"&gt;Spring Cloud App Broker&lt;/a&gt;. Spring Cloud App Broker represents an abstraction of a significant piece of the underlying architecture in Spring Cloud Services, and we are pleased to announce that Spring Cloud App Broker 1.0.1 is now available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="background"&gt;&lt;a class="anchor" href="#background"&gt;&lt;/a&gt;Background&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;a href="https://www.openservicebrokerapi.org"&gt;Open Service Broker API&lt;/a&gt; project allows developers to deliver services to applications running within cloud native platforms such as Cloud Foundry, Kubernetes, and OpenShift. To date, the only option for building a Spring Boot based service broker application has been to add the &lt;a href="https://spring.io/projects/spring-cloud-open-service-broker"&gt;Spring Cloud Open Service Broker&lt;/a&gt; starter to your project, include the required configuration, and implement the required interfaces. Spring Cloud Open Service Broker is less opinionated about service broker implementation and leaves many of those decisions to the developer, requiring the developer to implement all of the service broker application logic themselves.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="introduction"&gt;&lt;a class="anchor" href="#introduction"&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring Cloud App Broker is also a framework for building Spring Boot applications that implement the Open Service Broker API. It provides a framework based on Spring Boot that enables the developer to quickly create a service broker that deploys applications and services to the platform when managed services are provisioned. It builds on Spring Cloud Open Service Broker by offering opinionated implementations of the Spring Cloud Open Service Broker interfaces.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;What does this mean in practical terms? Imagine that the managed services that are deployed by a service broker have a dependency on additional services or applications. Utilizing App Broker configuration properties, these services and applications can be declared and the dependencies defined. When the service broker receives a request to provision a new service instance, App Broker will manage the deployment or provisioning of dependent apps and services, and bind those services and apps where appropriate. Conversely, when a request is received to delete a service instance, App Broker will unbind and delete any dependent services and applications that were previously provisioned.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="getting-started"&gt;&lt;a class="anchor" href="#getting-started"&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Create a Spring Boot application and include the Spring Cloud App Broker dependency in the application&amp;#8217;s build file.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="maven-dependencies"&gt;&lt;a class="anchor" href="#maven-dependencies"&gt;&lt;/a&gt;Maven Dependencies&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Include the following in your application&amp;#8217;s &lt;code&gt;pom.xml&lt;/code&gt; file:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;dependencies&amp;gt;
+    &amp;lt;dependency&amp;gt;
+        &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
+        &amp;lt;artifactId&amp;gt;spring-cloud-starter-app-broker-cloudfoundry&amp;lt;/artifactId&amp;gt;
+        &amp;lt;version&amp;gt;1.0.1.RELEASE&amp;lt;/version&amp;gt;
+    &amp;lt;/dependency&amp;gt;
+&amp;lt;/dependencies&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="gradle-dependencies"&gt;&lt;a class="anchor" href="#gradle-dependencies"&gt;&lt;/a&gt;Gradle Dependencies&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Include the following in your application&amp;#8217;s &lt;code&gt;build.gradle&lt;/code&gt; file:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-groovy" data-lang="groovy"&gt;dependencies {
+    compile 'org.springframework.cloud:spring-cloud-starter-app-broker-cloudfoundry:1.0.1.RELEASE'
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="configuring-the-service-broker"&gt;&lt;a class="anchor" href="#configuring-the-service-broker"&gt;&lt;/a&gt;Configuring the Service Broker&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The service broker is configured using Spring Boot externalized configuration, supplied using a YAML or Java Properties file (for example, you can provide configuration in the &lt;code&gt;application.yml&lt;/code&gt; file). Because Spring Cloud App Broker builds on Spring Cloud Open Service Broker, you must provide Spring Cloud Open Service Broker configuration in order to use Spring Cloud App Broker.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Include Spring Cloud Open Service Broker configuration using properties under &lt;code&gt;spring.cloud.openservicebroker&lt;/code&gt;, as in the following example:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-yml" data-lang="yml"&gt;spring:
+  cloud:
+    openservicebroker:
+      catalog:
+        services:
+        - name: example
+          id: ebca66fd-461d-415b-bba3-5e379d671c88
+          description: A useful service
+          bindable: true
+          tags:
+          - example
+          plans:
+          - name: standard
+            id: e19e6bc3-37c1-4478-b70f-c7157ebbb28c
+            description: A standard plan
+            free: true&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Include Spring Cloud App Broker configuration using properties under &lt;code&gt;spring.cloud.appbroker&lt;/code&gt;, as in the following example:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-yml" data-lang="yml"&gt;spring:
+  cloud:
+    appbroker:
+      services:
+        - service-name: example
+          plan-name: standard
+          apps:
+            - name: example-service-app1
+              path: classpath:app1.jar
+            - name: example-service-app2
+              path: classpath:app2.jar
+      deployer:
+        cloudfoundry:
+          api-host: api.sys.example.com
+          api-port: 443
+          username: admin
+          password: adminpass
+          default-org: test
+          default-space: development&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="service-instances"&gt;&lt;a class="anchor" href="#service-instances"&gt;&lt;/a&gt;Service Instances&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Backing apps and dependent services can be configured for one or more services that are managed by a service broker by using the following properties.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="app-deployment-properties"&gt;&lt;a class="anchor" href="#app-deployment-properties"&gt;&lt;/a&gt;App Deployment Properties&lt;/h5&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Properties for a backing app can be configured as default for all app deployments, or each service&amp;#8217;s backing app deployment may be configured individually. See the &lt;a href="https://docs.spring.io/spring-cloud-app-broker/docs/current/reference/html5/#_properties_configuration"&gt;reference documentation&lt;/a&gt; for a more comprehensive list of available properties.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-yml" data-lang="yml"&gt;spring:
+  cloud:
+    appbroker:
+      deployer:
+        cloudfoundry:
+          &lt;strong&gt;properties:&lt;/strong&gt;
+            &lt;strong&gt;memory: 1G&lt;/strong&gt;
+            &lt;strong&gt;health-check: http&lt;/strong&gt;
+            &lt;strong&gt;health-check-http-endpoint: /health&lt;/strong&gt;
+            &lt;strong&gt;health-check-timeout: 180&lt;/strong&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Set overriding values for a specific service in the service&amp;#8217;s configuration under &lt;code&gt;spring.cloud.appbroker.services.*&lt;/code&gt;, as shown in the following example:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-yml" data-lang="yml"&gt;spring:
+  cloud:
+    appbroker:
+      services:
+        - service-name: example
+          plan-name: standard
+          apps:
+            - name: example-service-app1
+              path: classpath:app1.jar
+              &lt;strong&gt;properties:&lt;/strong&gt;
+                &lt;strong&gt;memory: 2G&lt;/strong&gt;
+                &lt;strong&gt;count: 2&lt;/strong&gt;
+                &lt;strong&gt;no-route: true&lt;/strong&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="service-configuration"&gt;&lt;a class="anchor" href="#service-configuration"&gt;&lt;/a&gt;Service Configuration&lt;/h5&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;A backing app may require one or more dependent services. For example, an app may require the use of a MySQL database. App Broker will create any configured services and bind them to the associated app. Services are configured using properties under &lt;code&gt;services&lt;/code&gt; for the deployed app, as in the following example:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-yml" data-lang="yml"&gt;spring:
+  cloud:
+    appbroker:
+      services:
+        - service-name: example
+          plan-name: standard
+          apps:
+            - name: example-service-app1
+              path: classpath:app1.jar
+              &lt;strong&gt;services:&lt;/strong&gt;
+              &lt;strong&gt;- service-instance-name: example-db&lt;/strong&gt;
+                &lt;strong&gt;name: mysql&lt;/strong&gt;
+                &lt;strong&gt;plan: small&lt;/strong&gt;
+                &lt;strong&gt;parameters:&lt;/strong&gt;
+                  &lt;strong&gt;param-key: param-value&lt;/strong&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="further-customization"&gt;&lt;a class="anchor" href="#further-customization"&gt;&lt;/a&gt;Further Customization&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In addition to the supported configuration described above, Spring Cloud App Broker offers further methods of customizing the process of provisioning service instances. For example, App Broker can &lt;a href="https://docs.spring.io/spring-cloud-app-broker/docs/current/reference/html5/#_credentials_generation"&gt;generate and assign unique credentials&lt;/a&gt; for each backing app deployment through the use of customized credential providers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Workflows are also provided for the various stages of &lt;a href="https://docs.spring.io/spring-cloud-app-broker/docs/current/reference/html5/#_creating_a_service_instance"&gt;creating&lt;/a&gt;, &lt;a href="https://docs.spring.io/spring-cloud-app-broker/docs/current/reference/html5/#_updating_a_service_instance"&gt;updating&lt;/a&gt;, and &lt;a href="https://docs.spring.io/spring-cloud-app-broker/docs/current/reference/html5/#_deleting_a_service_instance"&gt;deleting&lt;/a&gt; service instances, and for &lt;a href="https://docs.spring.io/spring-cloud-app-broker/docs/current/reference/html5/#_creating_a_service_binding"&gt;creating&lt;/a&gt; and &lt;a href="https://docs.spring.io/spring-cloud-app-broker/docs/current/reference/html5/#_deleting_a_service_binding"&gt;deleting&lt;/a&gt; service instance bindings. For example, &lt;code&gt;CreateServiceInstanceWorkflow&lt;/code&gt; can be implemented and configured as a Spring Bean within the application to hook additional functionality into the request to create a service instance. This may be as simple as processing specific logging requirements.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="conclusion"&gt;&lt;a class="anchor" href="#conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Building functional service brokers can be challenging, but with the availability of projects such as Spring Cloud Open Service Broker and Spring Cloud App Broker, we are hoping to reduce the amount of boilerplate code and enable you to more quickly build your own service broker.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>CVE-2019-11269: Spring Security OAuth 2.3.6, 2.2.5, 2.1.5, 2.0.18 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/05/30/cve-2019-11269-spring-security-oauth-2-3-6-2-2-5-2-1-5-2-0-18-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Josh Cummings</name>
+    </author>
+    <id>tag:spring.io,2019-05-23:3690</id>
+    <updated>2019-05-30T15:40:26Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;We have released Spring Security OAuth 2.3.6, 2.2.5, 2.1.5 and 2.0.18 to address &lt;a href="https://pivotal.io/security/cve-2019-11269"&gt;CVE-2019-11269: Open Redirector in spring-security-oauth2&lt;/a&gt;. Please review the information in the CVE report and upgrade immediately.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;For additional changes included in each release, please refer to:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-security-oauth/milestone/46?closed=1"&gt;2.3.6 changelog&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-security-oauth/milestone/47?closed=1"&gt;2.2.5 changelog&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-security-oauth/milestone/48?closed=1"&gt;2.1.5 changelog&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-security-oauth/milestone/49?closed=1"&gt;2.0.18 changelog&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; For users of &lt;strong&gt;Spring Boot 1.5.x&lt;/strong&gt; and &lt;strong&gt;Spring IO Platform Cairo&lt;/strong&gt;, it is highly recommended to override the &lt;code&gt;spring-security-oauth&lt;/code&gt; version to the latest version containing the fix for the CVE. Please see the &lt;strong&gt;Mitigation&lt;/strong&gt; section in the CVE report for detailed instructions on how to override the version.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security-oauth/"&gt;Project Page&lt;/a&gt; |
+&lt;a href="https://github.com/spring-projects/spring-security-oauth/"&gt;GitHub&lt;/a&gt; |
+&lt;a href="http://projects.spring.io/spring-security-oauth/docs/Home.html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security-oauth2"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Webinar: Boosting Microservice Performance with Kafka, RabbitMQ, and Spring</title>
     <link rel="alternate" href="https://spring.io/blog/2019/05/30/webinar-boosting-microservice-performance-with-kafka-rabbitmq-and-spring" />
@@ -720,79 +1052,6 @@ Mono&amp;lt;Void&amp;gt; atomic = template.update(Step.class)&#xD;
   &lt;li&gt;Project Repository: &lt;a href="https://github.com/spring-projects/spring-data-r2dbc"&gt;github.com/spring-projects/spring-data-r2dbc&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Issue Tracker: &lt;a href="https://github.com/spring-projects/spring-data-r2dbc/issues"&gt;github.com/spring-projects/spring-data-r2dbc/issues&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-r2dbc/1.0.0.M2/"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/r2dbc/docs/1.0.0.M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/r2dbc/docs/1.0.0.M2/reference/html/"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/r2dbc/docs/1.0.0.M2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.1.5 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/05/15/spring-boot-2-1-5-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Phil Webb</name>
-    </author>
-    <id>tag:spring.io,2019-05-15:3681</id>
-    <updated>2019-05-15T12:00:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Boot 2.1.5 has been released and is now available from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and Maven Central.&lt;/p&gt;
-&lt;p&gt;This is a maintenance release that includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.1.5.RELEASE"&gt;a number of important dependency updates and bug fixes&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;A gentle reminder that Spring Boot 1.5 will be &lt;a href="https://spring.io/blog/2018/07/30/spring-boot-1-x-eol-aug-1st-2019"&gt;end of life in august&lt;/a&gt;, so all users should now be upgrading to Spring Boot 2.1.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.1.5.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.2 M3 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/05/15/spring-boot-2-2-m3-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Phil Webb</name>
-    </author>
-    <id>tag:spring.io,2019-05-15:3682</id>
-    <updated>2019-05-15T10:08:57Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone that contributed, I am pleased to announce that the third milestone of Spring Boot 2.2 has been released and is available from &lt;a href="http://repo.spring.io/milestone/"&gt;our milestone repository&lt;/a&gt;. This release closes over &lt;a href="https://github.com/spring-projects/spring-boot/milestone/135?closed=1"&gt;100 issues and pull requests&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;For a complete list of changes and upgrade instructions, please see the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.2-Release-Notes"&gt;Spring Boot 2.2 Release Notes&lt;/a&gt; on the wiki and the &lt;a href="http://docs.spring.io/spring-boot/docs/2.2.0.M3/reference/html/"&gt;updated reference documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;If you want to get started with 2.2 and try out the new features, you can bootstrap a new project on &lt;a href="https://start.spring.io"&gt;https://start.spring.io&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.2.0.M3/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tips: Spring Batch and Apache Kafka</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/05/15/spring-tips-spring-batch-and-apache-kafka" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2019-05-15:3680</id>
-    <updated>2019-05-15T00:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi Spring fans! Welcome to another installment of &lt;a href="http://twitter.com/SpringTipsLive"&gt;&lt;em&gt;Spring Tips&lt;/em&gt; (@SpringTipsLive)&lt;/a&gt;! In this installment we look at the &lt;em&gt;just-landed&lt;/em&gt; community contribution in Spring Batch adding support for Apache Kafka. This new support offers some tantalizing opportunities to bridge batch and streaming workloads. Stage large writes to backend warehouses with Kafka and drain the stream with Spring Batch. Load large amounts of data from existing datastores and funnel it into stream processing pipelines. And the possibilities become even more interesting when you consider &lt;a href="https://spring.io/blog/2016/10/13/spring-tips-a-gentle-introduction-to-spring-integration"&gt;Spring Integration&lt;/a&gt;, &lt;a href="https://spring.io/blog/2016/11/09/spring-tips-spring-cloud-stream"&gt;Spring Cloud Stream&lt;/a&gt;, &lt;a href="https://spring.io/blog/2018/04/04/spring-tips-spring-cloud-stream-kafka-streams"&gt;Spring Cloud Stream Kafka Streams&lt;/a&gt;, and &lt;a href="https://spring.io/blog/2016/11/16/spring-tips-spring-cloud-data-flow"&gt;Spring Cloud Data Flow&lt;/a&gt;. If you want a quick primer on Spring Batch-basics you might like this &lt;a href="https://spring.io/blog/2017/02/01/spring-tips-spring-batch"&gt;Spring Tip installment on Spring Batch&lt;/a&gt; from - &lt;em&gt;gasp&lt;/em&gt;! - two years ago!&lt;/p&gt;
-&lt;p&gt;speaker: &lt;a href="http://twitter.com/Starbuxman"&gt;Josh Long (@starbuxman) &lt;/a&gt;&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/UJesCn731G4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - May 14th, 2019</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/05/14/this-week-in-spring-may-14th-2019" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2019-05-14:3679</id>
-    <updated>2019-05-14T21:47:19Z</updated>
-    <content type="html">&lt;p&gt;Hi Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! I&amp;rsquo;m in beautiful Krakow for the epic Geecon show and then I&amp;rsquo;m off to spectacular Barcelona, Spain for the Spring I/O show. I hope to see you in both locations! It&amp;rsquo;s sure to be fun. Next week it&amp;rsquo;s going to be even more crazy! Next week I&amp;rsquo;m off to Zurich, Switzerland for a visit with some customers, and then it&amp;rsquo;s off to Paris, France for the Spring One Tour event there, and then it&amp;rsquo;s off to Minsk, Belarus, for the VOXXED Days Minsk show (my first time there! I&amp;rsquo;m so excited!), and then right after that, it&amp;rsquo;s off to Barcelona, Spain for JBCN. If you&amp;rsquo;re at any of these events in the next 12 days, I&amp;rsquo;d love to chat! &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/14/spring-boot-1-5-21-available-now"&gt;Spring Boot 1.5.21 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/14/spring-data-moore-m4-lovelace-sr8-and-ingalls-sr22-released"&gt;Spring Data Moore M4, Lovelace SR8 and Ingalls SR22 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/13/spring-integration-5-2-milestone-2-available"&gt;Spring Integration 5.2 Milestone 2 Available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/13/spring-for-apache-kafka-2-3-milestone-2"&gt;Spring for Apache Kafka 2.3 Milestone 2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/13/spring-amqp-spring-for-rabbitmq-2-2-milestone-2"&gt;Spring AMQP (Spring for RabbitMQ) 2.2 Milestone 2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/13/spring-integration-aws-2-2-ga-and-spring-cloud-stream-kinesis-binder-1-2-available"&gt;Spring Integration AWS 2.2 GA and Spring Cloud Stream Kinesis Binder 1.2 Available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/10/spring-framework-5-2-0-m2-5-1-7-5-0-14-and-4-3-24-available-now"&gt;Spring Framework 5.2.0.M2, 5.1.7, 5.0.14 and 4.3.24 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/09/a-bootiful-podcast-kotlin-team-engineer-roman-elisarov"&gt;A Bootiful Podcast: Kotlin team engineer Roman Elisarov&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/08/spring-tips-reactive-web-views"&gt;Spring Tips: Reactive Web Views&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/07/spring-boot-for-apache-geode-pivotal-gemfire-1-1-0-m1-released"&gt;Spring Boot for Apache Geode &amp;amp; Pivotal GemFire 1.1.0.M1 Released!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;[Want to learn about Kotlin? Check out this 2-parter talk that Dr. Venkat Subramaniam and I did at Devnexus. It introduces Kotlin and demonstrates the concepts in terms of APIs in Spring. Here&amp;rsquo;s &lt;a href="https://www.recallact.com/presentation/kotlin-jumpstart-venkat-and-josh-part-1"&gt;the first part&lt;/a&gt; and here&amp;rsquo;s &lt;a href="https://www.recallact.com/presentation/kotlin-jumpstart-venkat-and-josh-part-2"&gt;the second part&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;using Spring Cloud and wanting to figure out how to integrate some of these technologies for .NET-based projects? &lt;a href="https://twitter.com/springcloud/status/1126618789272072194"&gt;Check out this talk on Steeltoe&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Spring Boot contributor &lt;a href="https://twitter.com/snicoll/status/1126151776430903298"&gt;Stéphane Nicoll tweets&lt;/a&gt; that the next Spring Boot 2.2 milestone adds out-of-the-box support for JUnit 5 (whilst keeping compatibility with JUnit 4 via the vintage engine). Good stuff!&lt;/li&gt;
-  &lt;li&gt;The new &lt;em&gt;Java magazine&lt;/em&gt; is out, featuring an article about the work &lt;a href="https://twitter.com/srclbs/status/1126031390527709186?s=21"&gt;Sebastien Deleuze is doing with Spring Fu&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
