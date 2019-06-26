@@ -1,0 +1,5 @@
+package io.intellegience.ppmtool.payload;
+
+public class LoginRequest {
+
+}

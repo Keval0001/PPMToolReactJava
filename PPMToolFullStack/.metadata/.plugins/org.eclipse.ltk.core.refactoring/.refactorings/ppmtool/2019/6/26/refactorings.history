@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;io.intelligence.ppmtool.exceptions.UsernameAlreadyExistsExceptions.java&apos; to &apos;UsernameAlreadyExistsException.java&apos;&#x0D;&#x0A;- Original project: &apos;ppmtool&apos;&#x0D;&#x0A;- Original element: &apos;io.intelligence.ppmtool.exceptions.UsernameAlreadyExistsExceptions.java&apos;&#x0D;&#x0A;- Renamed element: &apos;io.intelligence.ppmtool.exceptions.UsernameAlreadyExistsException.java&apos;" description="Rename compilation unit &apos;UsernameAlreadyExistsExceptions.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java&lt;io.intelligence.ppmtool.exceptions{UsernameAlreadyExistsExceptions.java" name="UsernameAlreadyExistsException.java" references="false" stamp="1561571333712" version="1.0"/>
+</session>
