@@ -1,13 +1,18 @@
 package io.intelligence.ppmtool.domain;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Transient;
@@ -44,6 +49,8 @@ public class User implements UserDetails {
 	private Date updated_At;
 
 	// OneToMany with Project
+	@OneToMany(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER, mappedBy = "user", orphanRemoval = true)
+	private List<Project> project = new ArrayList<>();
 
 	public User() {
 
@@ -103,6 +110,16 @@ public class User implements UserDetails {
 
 	public void setUpdated_At(Date updated_At) {
 		this.updated_At = updated_At;
+	}
+
+	
+	
+	public List<Project> getProject() {
+		return project;
+	}
+
+	public void setProject(List<Project> project) {
+		this.project = project;
 	}
 
 	@PrePersist
