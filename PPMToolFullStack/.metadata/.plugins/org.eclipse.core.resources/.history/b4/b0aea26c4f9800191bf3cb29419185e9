@@ -1,0 +1,23 @@
+package io.intelligence.ppmtool.security;
+
+import java.sql.Date;
+
+import org.springframework.security.core.Authentication;
+
+import io.intelligence.ppmtool.domain.User;
+import static io.intelligence.ppmtool.security.SecurityConstants.EXPIRATION_TIME;
+
+public class JwtTokenProvider {
+	
+	//Generate the token
+	
+	public String generateToken(Authentication authentication) {
+		User user = (User)authentication.getPrincipal();
+		Date now = new Date(System.currentTimeMillis());
+		Date expiryDate = new Date(now.getTime()+EXPIRATION_TIME);
+	}
+	
+	//Validate the token
+	//Get user Id from token
+
+}
